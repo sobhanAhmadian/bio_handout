@@ -1,0 +1,95 @@
+\documentclass{article}
+
+\usepackage{amsthm,amssymb,amsmath,amsfonts}
+
+\usepackage[top=30mm, bottom=30mm, left=25mm, right=30mm]{geometry}
+
+\usepackage{graphicx}
+\usepackage{floatrow}
+\usepackage{caption, subcaption}
+\usepackage{wrapfig}
+\graphicspath{{graphics/}}
+
+\usepackage{color}
+
+\usepackage{amsmath}
+
+\usepackage{listings}
+
+\usepackage{enumitem}
+
+\usepackage{dblfnote}
+
+\usepackage[perpage,bottom]{footmisc}
+
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\usepackage{tikz}
+\usetikzlibrary{mindmap,trees,shadows}
+
+\usepackage{xepersian}
+\settextfont[Scale=1.2]{IRLotus}
+\defpersianfont\nastaliq[Scale=2]{IranNastaliq}
+\defpersianfont\chapternumber[Scale=3]{IRLotus}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\definecolor{MSBlue}{rgb}{.204,.353,.541}
+\definecolor{MSLightBlue}{rgb}{.31,.506,.741}
+\newfontfamily\subsubsectionfont[Color=MSLightBlue]{IranNastaliq}
+\titleformat*{\section}{\Large\nastaliq}
+\titleformat*{\subsection}{\large\nastaliq}
+\titleformat*{\subsubsection}{\large\nastaliq}
+
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+
+
+\title{
+	\nastaliq{
+		بیوانفورماتیک دکتر فاطمه زارع
+	}
+}
+\author{
+	\nastaliq {
+		سبحان احمدیان مقدم
+	}
+}
+\date{}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\input{BioChapterIntroduction}
+\input{‌‌BioChapterBiology}
+\input{BioChapterSequenceAlignment}
+\input{BioChapterGeneAndPromoterPrediction}
+\input{BioChapterMolecularPhylogenetics}
+\input{BioChapterStructuralBioinformatics}
+\input{BioChapterGenomicsAndProteomics}
+\input{BioChapterSystemBiology}
+
+\end{document}
