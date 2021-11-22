@@ -14,6 +14,11 @@
 
 \usepackage{amsmath}
 
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
 \usepackage{listings}
 
 \usepackage{enumitem}
@@ -83,8 +88,8 @@
 \maketitle
 \pagebreak
 
-\input{BioChapterIntroduction}
-\input{‌‌BioChapterBiology}
+%\input{BioChapterIntroduction}
+%\input{‌‌BioChapterBiology}
 \input{BioChapterSequenceAlignment}
 \input{BioChapterGeneAndPromoterPrediction}
 \input{BioChapterMolecularPhylogenetics}
